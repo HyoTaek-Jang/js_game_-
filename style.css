@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(153, 153, 153);
+}
+
+.wrapper{
+    width: 500px;
+    height: 700px;
+    background-color: bisque;
+    margin: 100px auto;
+}
+
+.input{
+    height: 27%;
+    background-color: rgb(143, 98, 43);
+    font-size: 2em;
+}
+
+input{
+
+    font-size: 1em;
+}
+
+.output{
+    height: 27%;
+    background-color: rgb(25, 94, 126);
+}
+
+.list{
+    height: 46%;
+    background-color: rgb(185, 99, 178);
+}
