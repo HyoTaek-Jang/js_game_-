@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--초기화-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
+    <!--css동기화-->
     <link rel="stylesheet" href="style.css">
 
+    <!--js동기화-->
     <script src="script.js"></script>
 
-    <title>끝말 잇기</title>
+    <title>쿠우우웅웅웅웅쿵따</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="input" >
-            입력 : <input type="text" id="input" >
+        <div class="title">
+            <h1>천하제일 쿵쿵따</h1>
         </div>
 
-        <div class="output" >
-            <input type="text" id="output">
+        <div class="content">
+            <div class="main">
+
+                <div class="maingame">
+
+                    <form action="">
+                        <div class="first_word">
+                            <p id="first_word">첫단어를</p>
+                        </div>
+    
+                        <div class="input_word">
+                            <input type="text" id="input_word" placeholder="입력해주세요!" autocomplete=”off” >
+                            <input type="submit" value="쿵쿵따" id="submit">
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="list">
+                    나온 단어<br>
+                    <ul>
+                        <p id="list">
+                            사무라이 -> 이스탄불 -> 불가리스마시졍 -> 정관장
+                        </p>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="manual">
+
+            </div>
+
         </div>
 
-        <div class="list" id="list">
 
-        </div>
-    </div>
 </body>
 </html>

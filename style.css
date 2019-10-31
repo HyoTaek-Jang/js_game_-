@@ -1,31 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Song+Myung&display=swap');
+
+
+
 body{
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(235, 212, 187);
+    font-family: 'Song Myung', serif; 
+    word-break:keep-all;
 }
 
-.wrapper{
-    width: 500px;
+.title{
+ 
+}
+
+.title h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 80px;
+    margin: 30px auto;
+
+}
+
+.title h1:after {
+    content: "";
+    display: block;
+    width: 600px;
+    border-bottom: 3px solid #636363;
+    margin: 15px auto;
+  }
+
+.content{
+
+}
+
+.main{
+    width: 700px;
     height: 700px;
-    background-color: bisque;
-    margin: 100px auto;
+    margin: 0 auto;
+    background-color: rgb(255, 159, 146);
+    color: rgb(34, 34, 34);
+
+
 }
 
-.input{
-    height: 27%;
-    background-color: rgb(143, 98, 43);
-    font-size: 2em;
+
+.maingame{
+    height: 30%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-input{
+.first_word{
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
 
-    font-size: 1em;
 }
 
-.output{
-    height: 27%;
-    background-color: rgb(25, 94, 126);
+.first_word p {
+    font-size: 50px;
+    text-align: center;
 }
+
+.input_word{
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    font-size: 50px;
+
+}
+
+#input_word{
+    width: 65%;
+    text-align: center;
+    
+}
+
+#submit{
+    text-align: center;
+}
+
+
 
 .list{
-    height: 46%;
-    background-color: rgb(185, 99, 178);
+    background-color: rgb(255, 225, 170);
+    height: 70%;
+    box-sizing: border-box;
+    font-size: 40px;
 }
+
