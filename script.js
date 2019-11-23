@@ -45,5 +45,41 @@ document.body.append(결과창);
 */
 
 window.onload = function(){
-    var
+    var form = this.document.getElementById("gameForm");
+    var firstWord = this.document.getElementById("first_word");
+    var inputWord = this.document.getElementById("input_word");
+    var wordList = this.document.getElementById("list");
+    var count = 0;
+    // 변수 선언
+
+    form.focus();
+    inputWord.maxLength = 3;
+    
+    form.addEventListener('submit', function game(e){
+        e.preventDefault(); // submit 기본 동작 막기
+
+        if(count === 0){
+            console.log(inputWord.value[0]);    // input에 우리가 쓴거 value, p태그 적힌거  textContent
+            console.log(firstWord.textContent);
+            firstWord.textContent = inputWord.value[inputWord.value.length - 1];
+            wordList.textContent += inputWord.value;
+            inputWord.value = '';
+            form.focus(); // 바로 커서 가게
+            count++;
+        }
+        else if(firstWord.textContent[firstWord.textContent.length - 1] === inputWord.value[0]){
+            firstWord.textContent = inputWord.value[inputWord.value.length - 1];
+            wordList.textContent += ' -> ' + inputWord.value;
+            inputWord.value = '';
+            form.focus(); // 바로 커서 가게
+            count++;
+        }
+        else{
+            alert(count+'번의 쿵쿵따에 성공하셨습니다!');
+            location.reload(true); // 페이지 새로고침
+        }
+
+
+
+    })
 }
